@@ -34,7 +34,7 @@ elsif memo_type == 2
 
   if File.exist?("#{file_name}.csv")
       puts "現在の内容は以下です"
-      puts File.readlines("{file_name}.csv")
+      puts File.readlines("#{file_name}.csv")
       
       puts "追記する内容を複数行入力してください。Ctrl + D / Ctrl + Z　で終了します:"
       memo_content = readlines.map(&:chomp)
